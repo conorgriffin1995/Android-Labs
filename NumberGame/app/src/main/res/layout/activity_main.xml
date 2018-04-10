@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow1" android:layout_width="wrap_content">
+            <Button android:layout_height="wrap_content" android:id="@+id/guessButton" android:text="@string/guessButton" android:layout_width="wrap_content" android:enabled="true"></Button>
+
+            <TextView
+                android:id="@+id/guessTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/correctButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:text="@string/correctButton"></Button>
+            <Button android:text="@string/tooHighButton" android:id="@+id/tooHighButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="true"></Button>
+            <Button android:text="@string/tooLowButton" android:id="@+id/tooLowButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="true"></Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

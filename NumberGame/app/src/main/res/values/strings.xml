@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Number Game</string>
+    <string name="guessButton">Guess</string>
+    <string name="correctButton">Correct!</string>
+    <string name="tooHighButton">Too High!</string>
+    <string name="tooLowButton">Too Low!</string>
+</resources>
