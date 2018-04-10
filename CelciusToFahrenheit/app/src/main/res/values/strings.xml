@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CelsiusToFahrenheit</string>
+    <string name="menu_settings">Settings</string>
+    <string name="celsiusEditText">0</string>
+</resources>

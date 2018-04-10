@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.delluser.celciustofahrenheit.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fahrenheitEditText"
+        android:onClick="convert"
+        android:text="Convert"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+
+    <EditText
+        android:id="@+id/celsiusEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/celsiusTextView"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <requestFocus />
+    <TextView
+        android:id="@+id/celsiusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusEditText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="Celsius" />
+
+    <TextView
+        android:id="@+id/fahrenheitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fahrenheitEditText"
+        android:layout_below="@+id/celsiusEditText"
+        android:layout_marginTop="26dp"
+        android:text="Fahrenheit" />
+
+    <EditText
+        android:id="@+id/fahrenheitEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/celsiusEditText"
+        android:layout_below="@+id/fahrenheitTextView"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
