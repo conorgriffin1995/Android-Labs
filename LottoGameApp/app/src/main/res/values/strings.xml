@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LottoGameApp</string>
+    <string name="pick_button">Pick</string>
+    <string name="action_settings">Settings</string>
+    <string name="how_many">6</string>
+    <string name="max">45</string>
+</resources>

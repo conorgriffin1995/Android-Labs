@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.delluser.ca2android.MainActivity">
+
+
+    <EditText
+        android:id="@+id/euroEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="214dp"
+        android:inputType="number|numberDecimal" />
+
+    <RadioButton
+        android:id="@+id/USDRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/euroEditText"
+        android:text="USD"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <RadioButton
+        android:id="@+id/GBPRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quoteTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp"
+        android:text="GBP" />
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_below="@+id/USDRadioButton"
+        android:layout_width="214dp"
+        android:layout_height="36dp"
+        android:text="Quote"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:onClick="convert"
+        android:layout_below="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <Button
+        android:id="@+id/clear"
+        android:onClick="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/quoteTextView"
+        android:layout_alignRight="@+id/quoteTextView"
+        android:layout_below="@+id/quoteTextView"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:text="Clear" />
+
+
+</RelativeLayout>
