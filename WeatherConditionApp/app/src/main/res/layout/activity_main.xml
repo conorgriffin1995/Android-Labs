@@ -11,27 +11,30 @@
 
     <Spinner
         android:id="@+id/citySpinner"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="14dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:id="@+id/temperatureTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="75dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/citySpinner"
-        android:layout_below="@+id/citySpinner" />
+        android:layout_alignEnd="@+id/conditionsImageView"
+        android:layout_alignRight="@+id/conditionsImageView"
+        android:layout_below="@+id/citySpinner"
+        android:layout_marginTop="18dp" />
 
     <ImageView
         android:id="@+id/conditionsImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/temperatureTextView"
-        android:layout_alignTop="@+id/temperatureTextView"
-        android:layout_marginTop="22dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/citySpinner"
+        android:layout_alignStart="@+id/citySpinner"
+        android:layout_below="@+id/temperatureTextView"
+        android:layout_marginTop="19dp"
         android:contentDescription="@string/conditionsImageViewContentDescription"
-        android:src="@drawable/ic_launcher" />
+        android:src="@mipmap/ic_launcher" />
 
 </RelativeLayout>

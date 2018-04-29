@@ -65,15 +65,15 @@ public class MainActivity extends Activity implements OnItemSelectedListener
 
                 if (w.GetConditions() == WeatherConditions.Sunny)
                 {
-                    conditionsiv.setImageResource(R.drawable.sunny);
+                    conditionsiv.setImageResource(R.mipmap.sunny);
                 }
                 else if (w.GetConditions() == WeatherConditions.Cloudy)
                 {
-                    conditionsiv.setImageResource(R.drawable.cloudy);
+                    conditionsiv.setImageResource(R.mipmap.cloudy);
                 }
                 else if (w.GetConditions() == WeatherConditions.Rain)
                 {
-                    conditionsiv.setImageResource(R.drawable.rain);
+                    conditionsiv.setImageResource(R.mipmap.rain);
                 }
             }
         }
